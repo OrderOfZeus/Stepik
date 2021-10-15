@@ -59,6 +59,13 @@ for i in range(a+1):
         if c<a+1:
             print(i, end=' ')
 
+Загуглил последовательность, у нее оказалась
+готовая форма для любого элемента и соответственно печатаем его:
+a(n)=floor(1/2+sqrt(2n))a(n)=floor(1/2+sqrt(2n))
+#код:
+import math
+x = int(input())
+print(*[int( 1/2 + math.sqrt(2 * n) ) for n in range(1, x + 1)])
 
 выводит сумму двух соседних для каждого числа из списка
 a=[int(i) for i in input().split()]
